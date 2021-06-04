@@ -2,11 +2,7 @@ def report = 'Failed in Step: '
 def reporttxt
 pipeline {
     //agent any
-	agent {
-    node {
-	    label '${params.node}'
-	    echo 'node value is : ${params.node}'
-    }
+	agent { label "${params.node}" }
 }
     stages {
         stage("setupenv") {
