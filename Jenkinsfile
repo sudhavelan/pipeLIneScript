@@ -8,7 +8,6 @@ pipeline {
 	    label '${params.node}'
     }
 }
-}
     stages {
         stage("setupenv") {
             steps {
