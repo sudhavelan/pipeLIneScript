@@ -1,3 +1,4 @@
+properties([parameters([string(defaultValue: 'vmapiportal01', description: '', name: 'node', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 def report = 'Failed in Step: '
 def reporttxt
 pipeline {
